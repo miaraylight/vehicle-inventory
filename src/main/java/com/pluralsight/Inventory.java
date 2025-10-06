@@ -33,10 +33,11 @@ public class Inventory {
                 listAllVehicles(vehicles, vehicleCount);
                 break;
             case 2:
-                //findVehiclesByPrice();
+                findVehiclesByPrice(vehicles);
                 break;
             case 5:
-                //addAVehicle();
+
+                addAVehicle(vehicles, vehicleCount);
                 break;
             case 6:
                 return;
@@ -53,4 +54,49 @@ public class Inventory {
 
         System.out.println("\nTotal vehicles loaded: " + vehicleCount);
     }
+
+   public static void findVehiclesByPrice (Vehicle[] vehicles) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter min price: ");
+       float minPrice = scanner.nextFloat();
+       scanner.nextLine();
+       System.out.print("Enter max price: ");
+       float maxPrice = scanner.nextFloat();
+       scanner.nextLine();
+       Vehicle[] inRange;
+
+       for (Vehicle vehicle: vehicles) {
+           if(vehicle.getPrice() > minPrice && vehicle.getPrice() < maxPrice){
+               System.out.println(vehicle.toString());
+           }
+       }
+   }
+
+    public static void addAVehicle (Vehicle[] vehicles, int vehicleCount) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter vehicle ID: ");
+        long id = scanner.nextLong();
+        scanner.nextLine();
+
+        System.out.print("Enter make/model: ");
+        String makeModel = scanner.nextLine();
+
+        System.out.print("Enter color: ");
+        String color = scanner.nextLine();
+
+        System.out.print("Enter odometer reading: ");
+        int odometer = scanner.nextInt();
+
+        System.out.print("Enter price: ");
+        float price = scanner.nextFloat();
+        scanner.nextLine();
+        scanner.close();
+
+        Vehicle newVehicle = new Vehicle(id, makeModel, color, odometer, price);
+        vehicles[vehicleCount++] = newVehicle;
+
+        System.out.println("Vehicle added!");
+        listAllVehicles(vehicles, vehicleCount);
+    }
+
 }
