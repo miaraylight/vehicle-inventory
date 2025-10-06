@@ -57,16 +57,17 @@ public class Inventory {
 
    public static void findVehiclesByPrice (Vehicle[] vehicles) {
        Scanner scanner = new Scanner(System.in);
+
        System.out.print("Enter min price: ");
        float minPrice = scanner.nextFloat();
        scanner.nextLine();
+
        System.out.print("Enter max price: ");
        float maxPrice = scanner.nextFloat();
        scanner.nextLine();
-       Vehicle[] inRange;
 
        for (Vehicle vehicle: vehicles) {
-           if(vehicle.getPrice() > minPrice && vehicle.getPrice() < maxPrice){
+           if(vehicle != null && vehicle.getPrice() > minPrice && vehicle.getPrice() < maxPrice){
                System.out.println(vehicle.toString());
            }
        }
