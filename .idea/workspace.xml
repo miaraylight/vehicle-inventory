@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="add filtering by color">
+    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="add while to continuously access menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" afterDir="false" />
     </list>
@@ -126,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759849874410</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add while to continuously access menu">
+      <option name="closed" value="true" />
+      <created>1759851731257</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1759851731257</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +157,7 @@
     <MESSAGE value="add filtering by price" />
     <MESSAGE value="add filtering by make" />
     <MESSAGE value="add filtering by color" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filtering by color" />
+    <MESSAGE value="add while to continuously access menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="add while to continuously access menu" />
   </component>
 </project>
