@@ -33,7 +33,7 @@ public class Inventory {
                 listAllVehicles(vehicles, vehicleCount);
                 break;
             case 2:
-                //findVehiclesByMake(vehicles, vehicleCount);
+                findVehiclesByMake(vehicles);
                 break;
             case 3:
                 findVehiclesByPrice(vehicles);
@@ -58,6 +58,17 @@ public class Inventory {
         }
 
         System.out.println("\nTotal vehicles loaded: " + vehicleCount);
+    }
+
+    public static void findVehiclesByMake(Vehicle[] vehicles) {
+        Scanner scanner = new Scanner(System.in);
+        String make = scanner.nextLine().trim().toLowerCase();
+
+        for (Vehicle vehicle: vehicles) {
+            if (vehicle != null && make.equals(vehicle.getMakeModel().toLowerCase())) {
+                System.out.println(vehicle.toString());
+            }
+        }
     }
 
     public static void findVehiclesByPrice (Vehicle[] vehicles) {

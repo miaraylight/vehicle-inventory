@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="fix null error on filtering vehicles">
+    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="add filtering by price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" afterDir="false" />
     </list>
@@ -23,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "miaraylight"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/miaraylight/vehicle-inventory.git",
+    "accountId": "47e2a9d4-9c11-4277-8c62-42bba277d582"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -90,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759737642982</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add filtering by price">
+      <option name="closed" value="true" />
+      <created>1759847820650</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759847820650</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +130,7 @@
     <MESSAGE value="implement listing All Vehicles" />
     <MESSAGE value="implement adding Vehicles" />
     <MESSAGE value="fix null error on filtering vehicles" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix null error on filtering vehicles" />
+    <MESSAGE value="add filtering by price" />
+    <option name="LAST_COMMIT_MESSAGE" value="add filtering by price" />
   </component>
 </project>
