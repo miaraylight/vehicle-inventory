@@ -39,7 +39,7 @@ public class Inventory {
                 findVehiclesByPrice(vehicles);
                 break;
             case 4:
-                //findVehiclesByColor(vehicles);
+                findVehiclesByColor(vehicles);
                 break;
             case 5:
                 addAVehicle(vehicles, vehicleCount);
@@ -62,6 +62,7 @@ public class Inventory {
 
     public static void findVehiclesByMake(Vehicle[] vehicles) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the make: ");
         String make = scanner.nextLine().trim().toLowerCase();
 
         for (Vehicle vehicle: vehicles) {
@@ -88,6 +89,18 @@ public class Inventory {
            }
        }
    }
+
+    public static void findVehiclesByColor(Vehicle[] vehicles) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the color:");
+        String color = scanner.nextLine().trim().toLowerCase();
+
+        for (Vehicle vehicle: vehicles) {
+            if (vehicle != null && color.equals(vehicle.getColor().toLowerCase())) {
+                System.out.println(vehicle.toString());
+            }
+        }
+    }
 
     public static void addAVehicle (Vehicle[] vehicles, int vehicleCount) {
         Scanner scanner = new Scanner(System.in);

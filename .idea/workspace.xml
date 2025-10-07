@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="add filtering by price">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="add filtering by make">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759847820650</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add filtering by make">
+      <option name="closed" value="true" />
+      <created>1759849573170</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759849573170</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +138,7 @@
     <MESSAGE value="implement adding Vehicles" />
     <MESSAGE value="fix null error on filtering vehicles" />
     <MESSAGE value="add filtering by price" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filtering by price" />
+    <MESSAGE value="add filtering by make" />
+    <option name="LAST_COMMIT_MESSAGE" value="add filtering by make" />
   </component>
 </project>
