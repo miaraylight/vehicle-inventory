@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="implement listing All Vehicles">
+    <list default="true" id="f1973b31-b56f-40a4-8b7d-ceee907bcda9" name="Changes" comment="fix null error on filtering vehicles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pluralsight/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pluralsight/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,23 @@
       <option name="project" value="LOCAL" />
       <updated>1759524195293</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement adding Vehicles">
+      <option name="closed" value="true" />
+      <created>1759737531618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759737531618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix null error on filtering vehicles">
+      <option name="closed" value="true" />
+      <created>1759737642982</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759737642982</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +108,8 @@
     <MESSAGE value="add Vehicle class" />
     <MESSAGE value="add vehicles to inventory" />
     <MESSAGE value="implement listing All Vehicles" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement listing All Vehicles" />
+    <MESSAGE value="implement adding Vehicles" />
+    <MESSAGE value="fix null error on filtering vehicles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix null error on filtering vehicles" />
   </component>
 </project>

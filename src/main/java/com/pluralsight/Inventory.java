@@ -33,10 +33,15 @@ public class Inventory {
                 listAllVehicles(vehicles, vehicleCount);
                 break;
             case 2:
+                //findVehiclesByMake(vehicles, vehicleCount);
+                break;
+            case 3:
                 findVehiclesByPrice(vehicles);
                 break;
+            case 4:
+                //findVehiclesByColor(vehicles);
+                break;
             case 5:
-
                 addAVehicle(vehicles, vehicleCount);
                 break;
             case 6:
@@ -55,7 +60,7 @@ public class Inventory {
         System.out.println("\nTotal vehicles loaded: " + vehicleCount);
     }
 
-   public static void findVehiclesByPrice (Vehicle[] vehicles) {
+    public static void findVehiclesByPrice (Vehicle[] vehicles) {
        Scanner scanner = new Scanner(System.in);
 
        System.out.print("Enter min price: ");
