@@ -8,16 +8,37 @@ public class Inventory {
         Vehicle[] vehicles = new Vehicle[20]; // array for up to 20 vehicles
         int vehicleCount = 0; // counter for number of vehicles stored
 
-        // Preload 6 vehicles
-        vehicles[vehicleCount++] = new Vehicle(101121, "Ford Explorer", "Red", 45000, 13500f);
-        vehicles[vehicleCount++] = new Vehicle(101122, "Toyota Camry", "Blue", 60000, 11000f);
-        vehicles[vehicleCount++] = new Vehicle(101123, "Chevrolet Malibu", "Black", 50000, 9700f);
-        vehicles[vehicleCount++] = new Vehicle(101124, "Honda Civic", "White", 70000, 7500f);
-        vehicles[vehicleCount++] = new Vehicle(101125, "Subaru Outback", "Green", 55000, 14500f);
-        vehicles[vehicleCount++] = new Vehicle(101126, "Jeep Wrangler", "Yellow", 30000, 16000f);
+        vehicleCount = getVehicle(vehicles, vehicleCount);
 
+        int command = 0;
 
+        while (command != 6) {
+            displayOptions();
+            command = scanner.nextInt();
+            switch(command) {
+                case 1:
+                    listAllVehicles(vehicles, vehicleCount);
+                    break;
+                case 2:
+                    findVehiclesByMake(vehicles);
+                    break;
+                case 3:
+                    findVehiclesByPrice(vehicles);
+                    break;
+                case 4:
+                    findVehiclesByColor(vehicles);
+                    break;
+                case 5:
+                    addAVehicle(vehicles, vehicleCount);
+                    break;
+                case 6:
+                    return;
+            }
+        }
 
+    }
+
+    private static void displayOptions() {
         System.out.println("What do you want to do?");
         System.out.println(" 1 - List all vehicles");
         System.out.println(" 2 - Search by make/model");
@@ -26,27 +47,16 @@ public class Inventory {
         System.out.println(" 5 - Add a vehicle");
         System.out.println(" 6 - Quit");
         System.out.println("Enter your command: ");
+    }
 
-        int command = scanner.nextInt();
-        switch(command) {
-            case 1:
-                listAllVehicles(vehicles, vehicleCount);
-                break;
-            case 2:
-                findVehiclesByMake(vehicles);
-                break;
-            case 3:
-                findVehiclesByPrice(vehicles);
-                break;
-            case 4:
-                findVehiclesByColor(vehicles);
-                break;
-            case 5:
-                addAVehicle(vehicles, vehicleCount);
-                break;
-            case 6:
-                return;
-        }
+    private static int getVehicle(Vehicle[] vehicles, int vehicleCount) {
+        vehicles[vehicleCount++] = new Vehicle(101121, "Ford Explorer", "Red", 45000, 13500f);
+        vehicles[vehicleCount++] = new Vehicle(101122, "Toyota Camry", "Blue", 60000, 11000f);
+        vehicles[vehicleCount++] = new Vehicle(101123, "Chevrolet Malibu", "Black", 50000, 9700f);
+        vehicles[vehicleCount++] = new Vehicle(101124, "Honda Civic", "White", 70000, 7500f);
+        vehicles[vehicleCount++] = new Vehicle(101125, "Subaru Outback", "Green", 55000, 14500f);
+        vehicles[vehicleCount++] = new Vehicle(101126, "Jeep Wrangler", "Yellow", 30000, 16000f);
+        return vehicleCount;
     }
 
     public static void listAllVehicles (Vehicle[] vehicles, int vehicleCount) {
@@ -120,7 +130,6 @@ public class Inventory {
         System.out.print("Enter price: ");
         float price = scanner.nextFloat();
         scanner.nextLine();
-        scanner.close();
 
         Vehicle newVehicle = new Vehicle(id, makeModel, color, odometer, price);
         vehicles[vehicleCount++] = newVehicle;
